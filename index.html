@@ -59,7 +59,7 @@
             body: formData
           });
 
-          if (!response.ok) throw new Error("Transcription failed");
+          if (!response.ok) throw new Error("Transcription failedhue");
 
           const data = await response.json();
           transcriptEl.textContent = "You said: " + data.text;
